@@ -14,7 +14,10 @@
       {
         "title": "cv-generator",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "minWidth": 800,
+        "minHeight": 600,
+        "label": "main"
       }
     ],
     "security": {
@@ -31,5 +34,8 @@
       "icons/icon.icns",
       "icons/icon.ico"
     ]
+  },
+  "plugins": {
+    "fs": {}
   }
 }

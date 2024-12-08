@@ -1,0 +1,7 @@
+export { default as PersonalInfoPage } from './PersonalInfoPage'
+export { default as EducationPage } from './EducationPage'
+export { default as ExperiencePage } from './ExperiencePage'
+export { default as SkillsPage } from './SkillsPage'
+export { default as ProjectsPage } from './ProjectsPage'
+export { default as CustomizePage } from './CustomizePage'
+export { default as ExportPage } from './ExportPage'

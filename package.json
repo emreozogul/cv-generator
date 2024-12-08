@@ -5,9 +5,20 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "nvmrc": "node -v > .nvmrc",
+    "postinstall": "npm run nvmrc",
+    "predev": "npm run nvmrc",
+    "tauri": "tauri",
+    "start": "vite",
+    "rls": "dotenv-load tauri build",
+    "build": "vite build",
     "preview": "vite preview",
-    "tauri": "tauri"
+    "serve": "vite preview",
+    "preinstall": "npm install -g sloc @tauri-apps/cli",
+    "sloc": "sloc src src-tauri/src",
+    "update": "concurrently \"npm update\" \"cd src-tauri && cargo update && cargo clean\"",
+    "clean": "rm -rf dist && rm -rf src-tauri/target",
+    "test": "mocha"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
